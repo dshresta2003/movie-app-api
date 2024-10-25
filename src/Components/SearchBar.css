@@ -1,0 +1,64 @@
+/* SearchBar.css */
+
+/* Styling for the search bar container */
+.search-bar {
+  display: flex;
+  justify-content: center; /* Centering the search bar */
+  margin: 20px 0; /* Margin above and below the search bar */
+}
+
+/* Form styling */
+.search-bar form {
+  display: flex;
+  width: 100%; /* Full width of the parent container */
+  max-width: 600px; /* Limit maximum width */
+}
+
+/* Input field styling */
+.search-bar input {
+  flex: 1; /* Take up remaining space */
+  padding: 12px 15px; /* Padding for input */
+  font-size: 1rem; /* Font size */
+  border: 2px solid #ddd; /* Border style */
+  border-radius: 5px 0 0 5px; /* Rounded corners on the left */
+  outline: none; /* No outline */
+  transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+/* Change border color on focus */
+.search-bar input:focus {
+  border-color: #007bff; /* Blue border on focus */
+}
+
+/* Button styling */
+.search-bar button {
+  padding: 12px 20px; /* Padding for button */
+  font-size: 1rem; /* Font size */
+  color: #fff; /* White text color */
+  background-color: #007bff; /* Blue background */
+  border: none; /* No border */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the right */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+/* Change button color on hover */
+.search-bar button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+  .search-bar form {
+    flex-direction: column; /* Stack input and button vertically */
+  }
+
+  .search-bar input {
+    margin-bottom: 10px; /* Space between input and button */
+    border-radius: 5px; /* Rounded corners on all sides */
+  }
+
+  .search-bar button {
+    width: 100%; /* Full width for button on mobile */
+  }
+}

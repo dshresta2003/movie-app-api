@@ -1,38 +1,46 @@
+/* App.css */
+
+/* Basic reset for body */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Default font */
+  background-color: #f4f4f4; /* Light background for the app */
+}
+
+/* General styling for the app */
 .App {
-  text-align: center;
+  display: flex; /* Flexbox layout for vertical stacking */
+  flex-direction: column; /* Column layout */
+  min-height: 100vh; /* Full viewport height */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar styling */
+.navbar {
+  z-index: 1000; /* Ensure navbar is above other content */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Footer styling */
+footer {
+  margin-top: auto; /* Push footer to the bottom */
+  background-color: #007bff; /* Match footer with navbar */
+  color: white; /* White text in footer */
+  padding: 10px 0; /* Padding for footer */
+  text-align: center; /* Center footer text */
+}
+
+/* Container for main content */
+.main-content {
+  flex: 1; /* Allow this to grow and take available space */
+  padding: 20px; /* Padding around main content */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .App {
+    padding: 0; /* Remove default padding for smaller screens */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  
+  .main-content {
+    padding: 10px; /* Reduced padding for mobile */
   }
 }

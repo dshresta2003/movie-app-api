@@ -1,0 +1,107 @@
+/* MovieDetailsPage.css */
+
+/* Basic reset and styling for the entire movie details page */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Main container for the movie details */
+.movie-details {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header section styling */
+.details-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.details-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.details-header p {
+  font-size: 1.2rem;
+  color: #777;
+  font-style: italic;
+}
+
+/* Body section styling for the details */
+.details-body {
+  display: flex; /* Flexbox for horizontal alignment */
+  align-items: flex-start; /* Align items at the start vertically */
+  gap: 20px; /* Space between image and details */
+}
+
+/* Movie poster styling */
+.details-body img {
+  width: 300px; /* Set a fixed width for the poster */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Information section styling */
+.details-info {
+  flex: 1; /* Allow the info section to take available space */
+  text-align: left;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.details-info h3 {
+  font-size: 1.5rem;
+  color: #007bff; /* Blue color for section headers */
+  margin-bottom: 10px;
+}
+
+.details-info p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0 0 15px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .details-body {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center; /* Center align items */
+  }
+
+  .details-info {
+    max-width: 90%; /* Make the info section responsive */
+    width: 100%; /* Ensure it takes full width */
+  }
+
+  .details-body img {
+    width: 80%; /* Responsive image size */
+  }
+}
+
+@media (max-width: 480px) {
+  .details-header h1 {
+    font-size: 2rem; /* Adjust header font size for smaller screens */
+  }
+
+  .details-header p {
+    font-size: 1rem; /* Adjust tagline font size for smaller screens */
+  }
+
+  .details-info h3 {
+    font-size: 1.2rem; /* Adjust section header font size */
+  }
+
+  .details-info p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+}

@@ -1,0 +1,52 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between logo and links */
+  align-items: center; /* Center items vertically */
+  background-color: #282c34; /* Dark background color */
+  padding: 10px 20px; /* Padding for top/bottom and left/right */
+}
+
+.navbar-logo img {
+  height: 40px; /* Set a smaller height for the logo */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.navbar-links {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Use flexbox for links */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.navbar-links li {
+  margin-left: 20px; /* Space between links */
+}
+
+.navbar-links a {
+  color: #ffffff; /* White text color for links */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 1rem; /* Font size for links */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar-links a:hover {
+  color: #61dafb; /* Change color on hover */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items on smaller screens */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .navbar-links {
+    margin-top: 10px; /* Space above links */
+  }
+
+  .navbar-links li {
+    margin-left: 0; /* Remove left margin for stacked items */
+    margin-bottom: 10px; /* Space between stacked links */
+  }
+}

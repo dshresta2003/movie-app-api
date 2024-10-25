@@ -1,0 +1,16 @@
+.movies-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .movies-page h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }

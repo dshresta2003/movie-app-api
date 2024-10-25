@@ -1,0 +1,36 @@
+/* Individual movie card styling */
+.movie-card {
+  background-color: #fff; /* White background for cards */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Hide overflow for rounded corners */
+  transition: transform 0.2s ease; /* Transition effect for hover */
+  width: 200px; /* Fixed width for cards */
+}
+
+/* Scale effect on hover */
+.movie-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Movie poster image styling */
+.movie-card img {
+  width: 100%; /* Full width of the card */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Movie title styling */
+.movie-card h3 {
+  font-size: 1.2rem; /* Title font size */
+  padding: 10px; /* Padding for title */
+  margin: 0; /* No margin */
+  text-align: center; /* Center title */
+}
+
+/* Movie rating styling */
+.movie-card p {
+  font-size: 1rem; /* Rating font size */
+  padding: 0 10px 10px; /* Padding for rating */
+  text-align: center; /* Center rating */
+  color: #777; /* Lighter color for rating */
+}

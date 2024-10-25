@@ -1,0 +1,31 @@
+/* Footer.css */
+
+.footer {
+  background-color: #282c34; /* Dark background for contrast */
+  color: #ffffff; /* White text for readability */
+  text-align: center; /* Center align all text */
+  padding: 20px 0; /* Padding for top and bottom */
+  position: relative; /* Positioning context for absolute elements */
+  bottom: 0; /* Stick to the bottom */
+  width: 100%; /* Full width */
+}
+
+.footer p {
+  margin: 5px 0; /* Margin for spacing between paragraphs */
+}
+
+.footer a {
+  color: #61dafb; /* Light blue color for links */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer a:hover {
+  color: #21a1f1; /* Darker blue on hover */
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px; /* Less padding on smaller screens */
+  }
+}
